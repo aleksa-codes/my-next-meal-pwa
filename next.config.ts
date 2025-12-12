@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 import withSerwistInit from '@serwist/next';
 
 const withSerwist = withSerwistInit({
@@ -8,6 +7,7 @@ const withSerwist = withSerwistInit({
 });
 
 export default withSerwist({
+  reactCompiler: true,
   images: {
     remotePatterns: [
       {
